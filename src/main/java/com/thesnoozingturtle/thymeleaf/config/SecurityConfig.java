@@ -18,7 +18,6 @@ public class SecurityConfig {
     // add a reference to security data source
 
     private DataSource securityDataSource;
-
     @Autowired
     public SecurityConfig(@Qualifier("securityDataSource") DataSource theSecurityDataSource) {
         securityDataSource = theSecurityDataSource;
